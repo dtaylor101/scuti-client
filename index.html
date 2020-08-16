@@ -45,6 +45,110 @@
                     </div>
                 </div>
             </div>
+            <div  class="frame s1 resizable draggable" style="display: block;width: 391px; height: calc(100% - 45px - 167px); top: 45px; left: 500px;">
+                <div class="header" @mousedown="dragMouseDown">
+                    <div class="title">
+                        Create a room
+                    </div>
+                    <div class="buttonsright">
+                        <button>
+                            <img src="client/img/question_mark.png">
+                        </button>
+                        <button @click="close" class="close">
+                            <img @click="close" class="close_img" src="client/img/cross.png">
+                        </button>
+                    </div>
+                </div>
+                <input placeholder="Enter a room name" style="margin-top: 14px;">
+                <div class="scrollbox" id="publicRooms" style="height: calc(100% - 163px); margin-top: 10px;">
+                    <button style="width: calc(50% - 12.5px); margin: 5px 5px;height: 100px; position: relative;">
+                        <img src="client/img/rooms/model_a.png" style="position: absolute; left: 50%; top: 50%;transform: translate(-50%,-50%);">
+                    </button>
+                    <button style="width: calc(50% - 12.5px); margin: 5px 5px;height: 100px; position: relative;">
+                        <img src="client/img/rooms/model_b.png" style="position: absolute; left: 50%; top: 50%;transform: translate(-50%,-50%);">
+                    </button>
+                    <button style="width: calc(50% - 12.5px); margin: 5px 5px;height: 100px; position: relative;">
+                        <img src="client/img/rooms/model_c.png" style="position: absolute; left: 50%; top: 50%;transform: translate(-50%,-50%);">
+                    </button>
+                    <button style="width: calc(50% - 12.5px); margin: 5px 5px;height: 100px; position: relative;">
+                        <img src="client/img/rooms/model_d.png" style="position: absolute; left: 50%; top: 50%;transform: translate(-50%,-50%);">
+                    </button>
+                    <button style="width: calc(50% - 12.5px); margin: 5px 5px;height: 100px; position: relative;">
+                        <img src="client/img/rooms/model_e.png" style="position: absolute; left: 50%; top: 50%;transform: translate(-50%,-50%);">
+                    </button>
+                    <button style="width: calc(50% - 12.5px); margin: 5px 5px;height: 100px; position: relative;">
+                        <img src="client/img/rooms/model_f.png" style="position: absolute; left: 50%; top: 50%;transform: translate(-50%,-50%);">
+                    </button>
+                    <button style="width: calc(50% - 12.5px); margin: 5px 5px;height: 100px; position: relative;">
+                        <img src="client/img/rooms/model_g.png" style="position: absolute; left: 50%; top: 50%;transform: translate(-50%,-50%);">
+                    </button>
+                    <button style="width: calc(50% - 12.5px); margin: 5px 5px;height: 100px; position: relative;">
+                        <img src="client/img/rooms/model_h.png" style="position: absolute; left: 50%; top: 50%;transform: translate(-50%,-50%);">
+                    </button>
+                    <button style="width: calc(50% - 12.5px); margin: 5px 5px;height: 100px; position: relative;">
+                        <img src="client/img/rooms/model_i.png" style="position: absolute; left: 50%; top: 50%;transform: translate(-50%,-50%);">
+                    </button>
+                    <button style="width: calc(50% - 12.5px); margin: 5px 5px;height: 100px; position: relative;">
+                        <img src="client/img/rooms/model_j.png" style="position: absolute; left: 50%; top: 50%;transform: translate(-50%,-50%);">
+                    </button>
+                    <button style="width: calc(50% - 12.5px); margin: 5px 5px;height: 100px; position: relative;">
+                        <img src="client/img/rooms/model_k.png" style="position: absolute; left: 50%; top: 50%;transform: translate(-50%,-50%);">
+                    </button>
+                    <button style="width: calc(50% - 12.5px); margin: 5px 5px;height: 100px; position: relative;">
+                        <img src="client/img/rooms/model_l.png" style="position: absolute; left: 50%; top: 50%;transform: translate(-50%,-50%);">
+                    </button>
+                    <button style="width: calc(50% - 12.5px); margin: 5px 5px;height: 100px; position: relative;">
+                        <img src="client/img/rooms/model_m.png" style="position: absolute; left: 50%; top: 50%;transform: translate(-50%,-50%);">
+                    </button>
+                    <button style="width: calc(50% - 12.5px); margin: 5px 5px;height: 100px; position: relative;">
+                        <img src="client/img/rooms/model_n.png" style="position: absolute; left: 50%; top: 50%;transform: translate(-50%,-50%);">
+                    </button>
+                    <button style="width: calc(50% - 12.5px); margin: 5px 5px;height: 100px; position: relative;">
+                        <img src="client/img/rooms/model_o.png" style="position: absolute; left: 50%; top: 50%;transform: translate(-50%,-50%);">
+                    </button>
+                    <button style="width: calc(50% - 12.5px); margin: 5px 5px;height: 100px; position: relative;">
+                        <img src="client/img/rooms/model_p.png" style="position: absolute; left: 50%; top: 50%;transform: translate(-50%,-50%);">
+                    </button>
+                    <button style="width: calc(50% - 12.5px); margin: 5px 5px;height: 100px; position: relative;">
+                        <img src="client/img/rooms/model_q.png" style="position: absolute; left: 50%; top: 50%;transform: translate(-50%,-50%);">
+                    </button>
+                    <button style="width: calc(50% - 12.5px); margin: 5px 5px;height: 100px; position: relative;">
+                        <img src="client/img/rooms/model_r.png" style="position: absolute; left: 50%; top: 50%;transform: translate(-50%,-50%);">
+                    </button>
+                    <button style="width: calc(50% - 12.5px); margin: 5px 5px;height: 100px; position: relative;">
+                        <img src="client/img/rooms/model_s.png" style="position: absolute; left: 50%; top: 50%;transform: translate(-50%,-50%);">
+                    </button>
+                    <button style="width: calc(50% - 12.5px); margin: 5px 5px;height: 100px; position: relative;">
+                        <img src="client/img/rooms/model_t.png" style="position: absolute; left: 50%; top: 50%;transform: translate(-50%,-50%);">
+                    </button>
+                    <button style="width: calc(50% - 12.5px); margin: 5px 5px;height: 100px; position: relative;">
+                        <img src="client/img/rooms/model_u.png" style="position: absolute; left: 50%; top: 50%;transform: translate(-50%,-50%);">
+                    </button>
+                    <button style="width: calc(50% - 12.5px); margin: 5px 5px;height: 100px; position: relative;">
+                        <img src="client/img/rooms/model_v.png" style="position: absolute; left: 50%; top: 50%;transform: translate(-50%,-50%);">
+                    </button>
+                    <button style="width: calc(50% - 12.5px); margin: 5px 5px;height: 100px; position: relative;">
+                        <img src="client/img/rooms/model_w.png" style="position: absolute; left: 50%; top: 50%;transform: translate(-50%,-50%);">
+                    </button>
+                    <button style="width: calc(50% - 12.5px); margin: 5px 5px;height: 100px; position: relative;">
+                        <img src="client/img/rooms/model_x.png" style="position: absolute; left: 50%; top: 50%;transform: translate(-50%,-50%);">
+                    </button>
+                    <button style="width: calc(50% - 12.5px); margin: 5px 5px;height: 100px; position: relative;">
+                        <img src="client/img/rooms/model_y.png" style="position: absolute; left: 50%; top: 50%;transform: translate(-50%,-50%);">
+                    </button>
+                    <button style="width: calc(50% - 12.5px); margin: 5px 5px;height: 100px; position: relative;">
+                        <img src="client/img/rooms/model_z.png" style="position: absolute; left: 50%; top: 50%;transform: translate(-50%,-50%);">
+                    </button>
+                    <button style="width: calc(50% - 12.5px); margin: 5px 5px;height: 100px; position: relative;">
+                        <img src="client/img/rooms/model_0.png" style="position: absolute; left: 50%; top: 50%;transform: translate(-50%,-50%);">
+                    </button>
+                </div>
+                <button style="width: 100%; margin-top: 13px; height: 58px;">
+                    <img src="client/img/keys.png" style="vertical-align: middle; margin-right: 5px;"> Create my room!
+                </button>
+            </div>
+            
+            
             <div  class="frame s1 resizable draggable" style="display: block;width: 391px; height: calc(100% - 45px - 167px); top: 45px; left: 90px;">
                 <div class="header" @mousedown="dragMouseDown">
                     <div class="title">
@@ -52,10 +156,10 @@
                     </div>
                     <div class="buttonsright">
                         <button>
-                            <img src="img/question_mark.png">
+                            <img src="client/img/question_mark.png">
                         </button>
                         <button @click="close" class="close">
-                            <img @click="close" class="close_img" src="img/cross.png">
+                            <img @click="close" class="close_img" src="client/img/cross.png">
                         </button>
                     </div>
                 </div>
@@ -74,7 +178,7 @@
                         Me
                     </div>
                 </div>
-                <div class="scrollbox" style="height: calc(100% - 130px); margin-top: 10px;">
+                <div class="scrollbox" id="publicRooms" style=" display: none;height: calc(100% - 130px); margin-top: 10px;">
                     <div class="hiddentab" @click="hiddentab" style="padding: 0px 0px; height: auto;">
                         <div class="header">
                             PUBLIC ROOMS
@@ -82,7 +186,7 @@
                             </div>
                         </div>
                         <div class="roomtab">
-                            <div class="thumbnail" style="background-image: url(img/1.png);">
+                            <div class="thumbnail" style="background-image: url(client/img/1.png);">
                             </div>
                             <div class="text">
                                 Welcome Lounge<br/><span style="color: #8F8E90; font-size: 14px;">Official Room</span>
@@ -92,7 +196,7 @@
                             </div>
                         </div>
                         <div class="roomtab">
-                            <div class="thumbnail" style="background-image: url(img/1.png);">
+                            <div class="thumbnail" style="background-image: url(client/img/1.png);">
                             </div>
                             <div class="text">
                                 Welcome Lounge<br/><span style="color: #8F8E90; font-size: 14px;">Official Room</span>
@@ -102,7 +206,7 @@
                             </div>
                         </div>
                         <div class="roomtab">
-                            <div class="thumbnail" style="background-image: url(img/1.png);">
+                            <div class="thumbnail" style="background-image: url(client/img/1.png);">
                             </div>
                             <div class="text">
                                 Welcome Lounge<br/><span style="color: #8F8E90; font-size: 14px;">Official Room</span>
@@ -112,7 +216,7 @@
                             </div>
                         </div>
                         <div class="roomtab">
-                            <div class="thumbnail" style="background-image: url(img/1.png);">
+                            <div class="thumbnail" style="background-image: url(client/img/1.png);">
                             </div>
                             <div class="text">
                                 Welcome Lounge<br/><span style="color: #8F8E90; font-size: 14px;">Official Room</span>
@@ -122,7 +226,7 @@
                             </div>
                         </div>
                         <div class="roomtab">
-                            <div class="thumbnail" style="background-image: url(img/1.png);">
+                            <div class="thumbnail" style="background-image: url(client/img/1.png);">
                             </div>
                             <div class="text">
                                 Welcome Lounge<br/><span style="color: #8F8E90; font-size: 14px;">Official Room</span>
@@ -132,7 +236,7 @@
                             </div>
                         </div>
                         <div class="roomtab">
-                            <div class="thumbnail" style="background-image: url(img/1.png);">
+                            <div class="thumbnail" style="background-image: url(client/img/1.png);">
                             </div>
                             <div class="text">
                                 Welcome Lounge<br/><span style="color: #8F8E90; font-size: 14px;">Official Room</span>
@@ -142,7 +246,7 @@
                             </div>
                         </div>
                         <div class="roomtab">
-                            <div class="thumbnail" style="background-image: url(img/1.png);">
+                            <div class="thumbnail" style="background-image: url(client/img/1.png);">
                             </div>
                             <div class="text">
                                 Welcome Lounge<br/><span style="color: #8F8E90; font-size: 14px;">Official Room</span>
@@ -152,7 +256,7 @@
                             </div>
                         </div>
                         <div class="roomtab">
-                            <div class="thumbnail" style="background-image: url(img/1.png);">
+                            <div class="thumbnail" style="background-image: url(client/img/1.png);">
                             </div>
                             <div class="text">
                                 Welcome Lounge<br/><span style="color: #8F8E90; font-size: 14px;">Official Room</span>
@@ -190,6 +294,61 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div id="meRooms" style=" display: block;height: calc(100% - 130px);">
+                    <div class="scrollbox" style="height: calc(100% - 70px); margin-top: 10px;">
+                        <div class="hiddentab" @click="hiddentab" style="padding: 0px 0px; height: auto;">
+                            <div class="header">
+                                MY ROOMS
+                                <div class="but hide">
+                                </div>
+                            </div>
+                            <div class="roomtab">
+                                <div class="thumbnail" style="background-image: url(client/img/2.png);">
+                                </div>
+                                <div class="text">
+                                    My Home<br/><span style="color: #8F8E90; font-size: 14px;">Kozen</span>
+                                </div>
+                                <div class="usercount orange">
+                                    6
+                                </div>
+                            </div>
+                            <div class="roomtab">
+                                <div class="thumbnail" style="background-image: url(client/img/3.png);">
+                                </div>
+                                <div class="text">
+                                    Soon is back?<br/><span style="color: #8F8E90; font-size: 14px;">Kozen</span>
+                                </div>
+                                <div class="usercount grey">
+                                    0
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hiddentab" style="">
+                            <div class="header">
+                                MY FAVORITES
+                                <div class="but show">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hiddentab" style="">
+                            <div class="header">
+                                LAST VISITED ROOMS
+                                <div class="but show">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hiddentab" style="">
+                            <div class="header">
+                                GUILDS ROOMS
+                                <div class="but show">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button style="width: 100%; margin-top: 13px; height: 58px;">
+                        Create a room
+                    </button>
                 </div>
             </div>
             <div  class="frame s1 resizable draggable" style="display: block;width: 724px; height: 450px; top: 45px; left: 490px;">
