@@ -1,4 +1,6 @@
 import * as PIXI from 'pixi.js';
+import {OutgoingManager} from "./messages/outcoming/OutgoingManager";
+import {outgoingManager} from "./main";
 
 export class Client {
     constructor(data) {
@@ -12,6 +14,11 @@ export class Client {
         this.container = new PIXI.Container();
 
         this.setUser(data);
+        this.listenUIEvents();
+    }
+
+    listenUIEvents() {
+        outgoingManager.UIEvent();
     }
 
     setUser(data) {
@@ -23,7 +30,7 @@ export class Client {
     }
 
     displayClient() {
-        document.getElementById("app").appendChild(this.app.view);
+        //document.getElementById("app").appendChild(this.app.view);
     }
 
     displayBeautifulRoom() {

@@ -16,6 +16,7 @@
     "parcel": "^1.12.4"
   },
   "dependencies": {
+    "jquery": "^3.5.1",
     "pixi.js": "^5.3.3"
   }
 }
