@@ -9,7 +9,22 @@ export class NavigatorRoomMessage {
                 let owner = this.packet.data[name].owner;
                 let description = this.packet.data[name].description;
 
-                // JQUERY: Add this room to the navigator with name/ownerID/description data
+                var component = [
+					'<div class="roomtab">',
+					'<div class="thumbnail" style="background-image: url(img/1.png);">',
+					'</div>',
+					'<div class="text">',
+					name + '<br/><span style="color: #8F8E90; font-size: 14px;">' + owner + '</span>',
+					'</div>',
+					'<div class="usercount grey">',
+					'0',
+					'</div>',
+					'</div>'
+					
+					
+		
+				];
+				$('#allRoomsTab').append(component.join(''));
             }
         }
     }
