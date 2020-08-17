@@ -27,7 +27,7 @@ ws.onmessage = function(event) {
     let dataParsed = JSON.parse(event.data);
     console.log("Data received: " + dataParsed);
 
-    let messageClassCorresponding = incomingManager.messages.get(IncomingUserMessages.UserLoginMessage);
+    let messageClassCorresponding = incomingManager.messages.get(dataParsed.packetId);
     let message = new messageClassCorresponding(dataParsed);
     message.execute();
 }
