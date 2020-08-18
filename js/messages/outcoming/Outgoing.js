@@ -4,4 +4,5 @@ export const OutgoingUserEvents = {
 
 export const OutgoingNavigatorEvent = {
     OpenNavigator: 213,
+    CreateRoomEvent: 214,
 }
