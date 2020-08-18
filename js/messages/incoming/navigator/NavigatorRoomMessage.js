@@ -14,22 +14,13 @@ export class NavigatorRoomMessage {
                 let owner = this.packet.data[name].owner;
                 let description = this.packet.data[name].description;
 
-                var component = [
-					"<div class='roomtab'>",
-					"<div class='thumbnail' style='background-image: url(../../../../img/1.png);'>",
-					'</div>',
-					'<div class="text">',
-					name + '<br/><span style="color: #8F8E90; font-size: 14px;">' + description + '</span>',
-					'</div>',
-					'<div class="usercount grey">',
-					'0',
-					'</div>',
-					'</div>'
-					
-					
-		
-				];
-				allRoomsTab.append(component.join(''));
+                const roomtab = $("<div></div>").addClass("roomtab");
+                const thumbnail = $("<div></div>").addClass("thumbnail").css("background", "url()").appendTo(roomtab);
+                const text = $("<div></div>").addClass("text").html(name + "<br>").appendTo(roomtab);
+                const span = $("<span></span>").css("color", "#8F8E90").css("font-size", "14px").append(description).appendTo(text);
+                const userCount = $("<div></div>").addClass("usercount grey").append("2").appendTo(roomtab);
+
+				allRoomsTab.append(roomtab);
             }
         }
     }
