@@ -59,7 +59,7 @@
                         </div>
                     </div>
                 </div>
-                <div  class="frame s1 resizable draggable" style="display: none;width: 391px; height: calc(100% - 45px - 167px); top: 45px; left: 500px;">
+                <div id="createRoom" class="frame s1 resizable draggable" style="display: block;width: 391px; height: calc(100% - 45px - 167px); top: 45px; left: 500px;">
                     <div class="header" @mousedown="dragMouseDown">
                         <div class="title">
                             Create a room
@@ -73,8 +73,8 @@
                             </button>
                         </div>
                     </div>
-                    <input placeholder="Enter a room name" style="margin-top: 14px;">
-                    <div class="scrollbox" id="publicRooms" style="height: calc(100% - 163px); margin-top: 10px;">
+                    <input id="roomName" placeholder="Enter a room name" style="margin-top: 14px;">
+                    <div class="scrollbox" style="height: calc(100% - 163px); margin-top: 10px;">
                         <button style="width: calc(50% - 12.5px); margin: 5px 5px;height: 100px; position: relative;">
                             <img src="img/rooms/model_a.png" style="position: absolute; left: 50%; top: 50%;transform: translate(-50%,-50%);">
                         </button>
@@ -154,7 +154,7 @@
                             <img src="img/rooms/model_0.png" style="position: absolute; left: 50%; top: 50%;transform: translate(-50%,-50%);">
                         </button>
                     </div>
-                    <button style="width: 100%; margin-top: 13px; height: 58px;">
+                    <button id="createRoomAction" style="width: 100%; margin-top: 13px; height: 58px;">
                         <img src="img/keys.png" style="vertical-align: middle; margin-right: 5px;"> Create my room!
                     </button>
                 </div>
