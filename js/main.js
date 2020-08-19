@@ -3,7 +3,6 @@ import { Network } from "./networking/Network.js";
 
 import { IncomingManager } from "./messages/incoming/IncomingManager.js";
 import { OutgoingManager } from "./messages/outcoming/OutgoingManager.js";
-import { IncomingUserMessages } from "./messages/incoming/Incoming.js";
 
 export let ws = new Network("localhost", "30000");
 let incomingManager = new IncomingManager();

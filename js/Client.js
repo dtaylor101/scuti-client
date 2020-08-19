@@ -1,6 +1,5 @@
 import * as PIXI from 'pixi.js';
-import {OutgoingManager} from "./messages/outcoming/OutgoingManager";
-import {outgoingManager} from "./main";
+import {Event} from "./ui/Event";
 
 export class Client {
     constructor(data) {
@@ -18,7 +17,7 @@ export class Client {
     }
 
     listenUIEvents() {
-        outgoingManager.UIEvent();
+        Event.navigatorEvents();
     }
 
     setUser(data) {
