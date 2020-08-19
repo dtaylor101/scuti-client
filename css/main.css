@@ -424,6 +424,22 @@ box-shadow: inset 0px 2px 0px 0px rgba(0,0,0,0.12);
 .frame.s1 .roomtab .usercount.grey {
     background-color: #ddd;
 }
+.frame.s1 .inventoryleft {
+    width: calc(100% - 151px);
+    margin-top: 14px;
+    position: relative;
+    height: calc(100% - 83px);
+    float: left;
+}
+.frame.s1 .inventoryright {
+    width: 151px;
+    position: relative;
+    margin-top: 14px;
+    height: calc(100% - 83px);
+    float: right;
+}
+
+
 .frame.s1 .catalogleft {
     width: 200px;
     margin-top: 14px;
